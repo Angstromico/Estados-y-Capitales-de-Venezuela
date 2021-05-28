@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  h1 {
+      font-weight: bold;
+      text-align: center;
+      color: blue;
+      font-family: 'Odibee Sans', cursive;
+  }
+body {
+  font-family: 'Odibee Sans', cursive;
+}
+a {
+  color: black;
+}
+a:hover {
+  background-color: blue;
+  color: gold;
+  cursor: pointer;
+}
+p {
+  font-size: 2rem;
+  text-align: justify;
+  margin: 0 1rem;
+}
+div p {
+  text-indent: 50px;
+}
+span {
+  font-weight: bold;
+}
+ul {
+  margin: 0 auto;
+}
+li {
+  font-size: 2rem;
+}
+.size {
+  height: 2em;
+  width: 2em;
+}
+.alineado {
+  display: flex;
+  justify-content: space-between;
+}
+.autocompletado-activo {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+.autocompletado {
+  position: relative;
+  display: inline-block;
+}
+.autocompletado-objetos {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+} 
+.autocompletado-objetos div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocompletado-objetos div:hover {
+  background-color: #e9e9e9;
+}

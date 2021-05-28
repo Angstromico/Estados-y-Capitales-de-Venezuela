@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados de Venezuela</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<!-- jQuery library -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-image" style="background-image: url(Mapa.jpg); background-size: contain; resize: both;">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="alineado">
+                <img src="img/Escudo.png" alt="Escudo" class="size">
+                <h1 class="display-3 text-uppercase">Estados de Venezuela</h1>
+                <img src="img/Bandera.png" alt="Bandera" class="size">
+            </div>
+            <p class="lead">Recorrido breve por la Información de los Estados de Venezuela</p>
+            <hr class="my-2">
+            <p>Más Información</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="https://github.com/Angstromico" role="button">Angstromico</a>
+            </p>
+        </div>
+    </div>
+    <div class="input-group autocompletado" id="busqueda">
+        <input type="search" class="form-control rounded" placeholder="Busca estado o capital" aria-label="Search"
+          aria-describedby="search-addon" id="barra-busqueda" autocomplete="off"/>
+        <button type="button" class="btn btn-outline-primary button" onclick="buscar();" id="input">Consulta</button>
+      </div>
+    <main class="cotainer-fluid row mx-auto">
+        <ul class="list-group col-sm-6 text-center" id="lista">
+            <a id="1"><li class="list-group-item">Distrito Capital</li>
+            <div class="bg-image panel1" style="background-image: url(img/Caracas.jpg);  resize: both; background-size: cover; display: none; background-repeat: no-repeat;">
+                <h2>Distrito Capital</h2>
+                <h3>Fundación: <span>27 de marzo de 1527</span></h3>
+                <p class="text-justify">El Distrito Capital ​(antiguamente llamado Distrito Federal) es una de las 25 entidades federales de Venezuela. Se encuentra ubicada en la zona Cordillera de la Costa (centro-norte del país), en la Región Capital. Forma parte de la ciudad de Caracas que además es capital de la República. En el Distrito Capital tienen asiento los Poderes Públicos Nacionales. Esta entidad posee rango federal y la competencia de organizar dicho territorio; tiene una organización política particular. Tiene una superficie de 433 km² y contiene la parte occidental del Distrito Metropolitano de Caracas.</p>
+            </div></a>
+            <a id="2"><li class="list-group-item">Aragua</li>
+            <div class="bg-image panel2" style="background-image: url(img/Aragua.jpg);  resize: both; background-size: cover; display: none; background-repeat: no-repeat;">
+                <h2>Aragua</h2>
+                <h3>Fundación: <span>11 de febrero de 1848</span></h3>
+                <p class="text.justify">Aragua, oficialmente Estado de Aragua, es uno de los veintitrés estados que, junto con el Distrito Capital y las dependencias federales, forman Venezuela. Su capital es Maracay. Está ubicado en el centro-norte del país, en la región Central. Con 2 505 937 habitantes en 2018, según proyecciones del INE, es el quinto estado más poblado por detrás de Zulia, Miranda, Carabobo y Lara, con 7014 km², el cuarto menos extenso por delante de Carabobo, La Guaira y Nueva Esparta, el menos extenso y con 235,6 hab/km², el quinto más densamente poblado, por detrás de Carabobo, Nueva Esparta, Miranda y La Guaira.</p>
+            </div></a>
+            <a id="3" ><li class="list-group-item">Carabobo</li></a>
+            <a id="4" ><li class="list-group-item">Lara</li></a>
+            <a id="5" ><li class="list-group-item">Cojedes</li></a>
+            <a id="6" ><li class="list-group-item">Apure</li></a>
+            <a id="7" ><li class="list-group-item">Yaracuy</li></a>
+            <a id="8" ><li class="list-group-item">Monagas</li></a>
+            <a id="9" ><li class="list-group-item">Bolívar</li></a>
+            <a id="10"><li class="list-group-item">Delta Amacuro</li></a>
+            <a id="11"><li class="list-group-item">Barinas</li></a>
+            <a id="12"><li class="list-group-item">Portuguesa</li></a>
+            <a id="13"><li class="list-group-item">Miranda</li></a>
+            <a id="14"><li class="list-group-item">Mérida</li></a>
+            <a id="15"><li class="list-group-item">Trujillo</li></a>
+            <a id="16"><li class="list-group-item">Zulia</li></a>
+            <a id="17"><li class="list-group-item">Nueva Esparta</li></a>
+            <a id="18"><li class="list-group-item">Amazonas</li></a>
+            <a id="19"><li class="list-group-item">Sucre</li></a>
+            <a id="20"><li class="list-group-item">Falcon</li></a>
+            <a id="21"><li class="list-group-item">Anzoategui</li></a>
+            <a id="22"><li class="list-group-item">Táchira</li></a>
+            <a id="23"><li class="list-group-item">Guárico</li></a>
+        </ul>
+          <ul class="list-group col-sm-6 text text-center" id="lista2">
+            <a id="24"><li class="list-group-item">Caracas</li></a>
+            <a id="25"><li class="list-group-item">Maracay</li></a>
+            <a id="26"><li class="list-group-item">Valencia</li></a>
+            <a id="27"><li class="list-group-item">Barquisimeto</li></a>
+            <a id="28"><li class="list-group-item">San Carlos</li></a>
+            <a id="29"><li class="list-group-item">San Fernando de Apure</li></a>
+            <a id="30"><li class="list-group-item">San Felipe</li></a>
+            <a id="31"><li class="list-group-item">Maturín</li></a>
+            <a id="32"><li class="list-group-item">Ciudad Bolívar</li></a>
+            <a id="33"><li class="list-group-item">Tucupita</li></a>
+            <a id="34"><li class="list-group-item">Barinas</li></a>
+            <a id="35"><li class="list-group-item">Guanare</li></a>
+            <a id="36"><li class="list-group-item">Los Teques</li></a>
+            <a id="37"><li class="list-group-item">Mérida</li></a>
+            <a id="38"><li class="list-group-item">Trujillo</li></a>
+            <a id="39"><li class="list-group-item">Maracaibo</li></a>
+            <a id="40"><li class="list-group-item">Margarita</li></a>
+            <a id="41"><li class="list-group-item">Puerto Ayacucho</li></a>
+            <a id="42"><li class="list-group-item">Cumaná</li></a>
+            <a id="43"><li class="list-group-item">Coro</li></a>
+            <a id="44"><li class="list-group-item">Barcelona</li></a>
+            <a id="45"><li class="list-group-item">San Cristóbal</li></a>
+            <a id="46"><li class="list-group-item">San Juan de los Morros</li></a>
+          </ul>
+    </main>
+    <script src="javascript.js"></script>
+    <footer>
+        <a style="font-size: 3rem;" href="https://twitter.com/CodingManuel">Manuel Morales</a>
+    <a style="font-size: 3rem;" href="https://github.com/Angstromico">Angstromico</a></footer>
+    <p>Todos los Derechos Reservados 2021 &#169;</p>
+</body>
+</html>
