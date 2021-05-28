@@ -176,6 +176,7 @@ for(let i = 3; i <= 46; i++) {
             single_double_click();
           } else {
             console.log('no seleccionaste ningún estado o capital');
+            alert('Escriba un estado o capital de Venezuela por favor');
             single_double_click();
           }
         })
