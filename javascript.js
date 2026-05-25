@@ -22,11 +22,14 @@ for(let i = 3; i <= 46; i++) {
     const div = document.createElement('DIV');
     div.classList.add(`panel${estado}`);
     div.style.display = 'none';
-    div.style.backgroundImage = `url('img/${estado}.jpg')`
+    div.style.backgroundImage = `url('img/${estado}.jpg')`;
     div.style.backgroundRepeat = 'no-repeat';
     div.style.backgroundSize = 'cover';
     div.style.resize = 'both';
+    div.style.overflow = 'hidden';
+    div.style.padding = '20px';
     const h2 = document.createElement('H2');
+    h2.style.marginTop = '0';
     if(i < 25) {
         h2.innerHTML = `Estado ${lista}`;
     } else {
