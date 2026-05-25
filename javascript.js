@@ -51,7 +51,6 @@ for(let i = 3; i <= 46; i++) {
     const contenido = document.querySelectorAll('p');
     const parrafos = [...contenido];
     console.log(h3.innerHTML);
-    //carabobo.textContent = 'Carabobo es uno de los veintitrés estados que, junto con el Distrito Capital y las Dependencias Federales, forman la República Bolivariana de Venezuela. Su capital es Valencia. Está ubicado en el centro-norte del país, en la región Central. Limita al norte con el golfo Triste (mar Caribe, océano Atlántico), al este con Aragua, al sur con Guárico y Cojedes, y al oeste con Yaracuy. Con 4650 km² es el tercer estado menos extenso por delante de Vargas y Nueva Esparta, el menos extenso, con 2.886.093 habitantes en 2016, el tercero más poblado —por detrás de Zulia y Miranda y con 713 hab/km², el más densamente poblado.'
     $(document).ready(function(){
         $(`#${estado}`).click(function(){
           $(`.panel${estado}`).slideToggle("slow");
