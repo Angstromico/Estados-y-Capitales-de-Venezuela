@@ -207,10 +207,15 @@ jQuery.fn.single_double_click = function(single_click_callback, double_click_cal
 //Autocompletado de Barra de Busqueda
 const list = [...listas];
 const listado = list.map(e => e.textContent);
-  $( function() {
+$( function() {
     listado;
     $( "#barra-busqueda" ).autocomplete({
       source: listado
+    });
+    $("#barra-busqueda").keypress(function(e) {
+      if (e.which == 13) {
+        buscar();
+      }
     });
   } );
 //Scroll a element seleccionado
