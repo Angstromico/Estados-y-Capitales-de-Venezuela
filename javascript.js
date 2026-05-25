@@ -22,7 +22,7 @@ for(let i = 3; i <= 46; i++) {
     const div = document.createElement('DIV');
     div.classList.add(`panel${estado}`);
     div.style.display = 'none';
-    div.style.backgroundImage = `url('img/${estado}.jpg')`;
+    div.style.backgroundImage = `url('img/${estado}.webp')`;
     div.style.backgroundRepeat = 'no-repeat';
     div.style.backgroundSize = 'cover';
     div.style.resize = 'both';
