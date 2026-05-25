@@ -22,7 +22,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-image" style="background-image: url(Mapa.jpg); background-size: contain; resize: both;">
+<body class="bg-image" style="background-image: url(Mapa.jpg); background-size: contain;">
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="alineado">
@@ -43,7 +43,8 @@
           aria-describedby="search-addon" id="barra-busqueda" autocomplete="off"/>
         <button type="button" class="btn btn-outline-primary button" onclick="buscar();" id="input">Consulta</button>
       </div>
-    <main class="cotainer-fluid row mx-auto">
+    <main class="container-fluid">
+    <div class="row mx-auto">
         <ul class="list-group col-sm-6 text-center" id="lista">
             <a id="1"><li class="list-group-item">Distrito Capital</li>
             <div class="bg-image panel1" style="background-image: url(img/Caracas.jpg);  resize: both; background-size: cover; display: none; background-repeat: no-repeat; overflow: hidden; padding: 20px;">
@@ -104,6 +105,7 @@
             <a id="45"><li class="list-group-item">San Cristóbal</li></a>
             <a id="46"><li class="list-group-item">San Juan de los Morros</li></a>
           </ul>
+    </div>
     </main>
     <script src="javascript.js"></script>
     <footer>
